@@ -84,7 +84,7 @@ main,
     background: linear-gradient(0deg, rgba(0, 6, 36, 1) 0%, rgba(232, 233, 255, 1) 0%, rgba(244, 244, 252, 1) 83%);
 }
 
-#banner-section .bannder-section-left{
+#banner-section .bannder-section-left {
     padding: 20px;
 }
 
@@ -136,7 +136,7 @@ main,
     z-index: 100;
 }
 
-#banner-section-right{
+#banner-section-right {
     position: relative;
 }
 
@@ -146,14 +146,14 @@ main,
     background: #232ED1;
     border-bottom-right-radius: 50px;
     position: absolute;
-    right:  0px;
+    right: 0px;
     bottom: 0;
     margin-bottom: -25px;
 }
 
-#banner-section #box2{
+#banner-section #box2 {
     width: 24px;
-height: 24px;
+    height: 24px;
     background: #d15d23;
     border-top-left-radius: 10px;
     position: absolute;
@@ -164,3 +164,21 @@ height: 24px;
 }
 
 /* BANNDER SECTION END */
+
+/* LOGO SECTION START */
+#logo-section {
+    margin-top: 95px;
+    text-align: center;
+}
+
+#logo-section p {
+    margin-bottom: 48px;
+    text-align: center;
+}
+#logo-section article{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* LOGO SECTION END */
