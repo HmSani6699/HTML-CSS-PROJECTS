@@ -11,7 +11,7 @@ body {
 /* MAIN SECTION START*/
 main,
 #navber {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: auto;
 }
 
@@ -222,13 +222,14 @@ main,
     line-height: 30px;
 }
 
-#features-section #features-section-right{
+#features-section #features-section-right {
     display: flex;
     gap: 32px;
     margin-left: 50px;
 }
 
-#features-section #features-section-right .box-1,#features-section #features-section-right .box-2{
+#features-section #features-section-right .box-1,
+#features-section #features-section-right .box-2 {
     width: 260px;
     height: 260px;
     padding-left: 40px;
@@ -255,12 +256,56 @@ main,
     padding-top: 50px;
 }
 
-#features-section #features-section-right .reward-box{
+#features-section #features-section-right .reward-box {
     margin-top: 32px;
     margin-bottom: 32px;
 }
-#features-section #features-section-right .success-box{
+
+#features-section #features-section-right .success-box {
     margin-bottom: 32px;
 }
 
 /* FEATURES SECTION END */
+
+/* HAPPY SECTION STSART */
+#happy-section {
+    height: 100vh;
+    margin-top: 110px;
+    position: relative;
+}
+
+#happy-section img {
+    width: 100%;
+    height: 100vh;
+}
+
+#happy-section .happy-box {
+    height: 300px;
+    background: #232ED1;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    border-top-left-radius: 8px;
+    width: 887px;
+    position: absolute;
+    right: 0;
+    bottom: -150px;
+}
+
+#happy-section .happy-box h2 {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -1.44px;
+    width: 45%;
+}
+
+#happy-section .happy-box p {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 171%;
+    width: 50%;
+}
+
+/* HAPPY SECTION END */
