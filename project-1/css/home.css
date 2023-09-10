@@ -413,9 +413,9 @@ main,
 #analytics-container #analytics-container-right button .fa-solid,
 #customers-container #customers-container-left button .fa-solid,
 #alerts-container #alerts-container-right button .fa-solid {
-    transition: all 0.4s;
+    transition: all 0.3s;
     padding-left: 5px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #analytics-container #analytics-container-right button:hover .fa-solid,
@@ -457,10 +457,11 @@ main,
     line-height: 32px;
 }
 
-#review-container .box-1{
+#review-container .box-1 {
     border-bottom-left-radius: 10px;
 }
-#review-container .box-3{
+
+#review-container .box-3 {
     border-top-right-radius: 15px;
 }
 
@@ -489,5 +490,52 @@ main,
     color: #F24C27;
 }
 
-
 /* REVIEW SECTION END */
+
+/* FAQ SECTION START */
+#faq-container {
+    max-width: 800px;
+    margin: 0px auto 128px auto;
+}
+
+#faq-container h2 {
+    color: #0D1317;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 106.5%;
+    letter-spacing: -1.44px;
+    margin-bottom: 50px;
+}
+
+#faq-container .faq-box {
+    display: flex;
+}
+
+#faq-container .faq-box .number-1{
+    color: #0010FF;
+}
+
+#faq-container .faq-box .number {
+    font-size: 24px;
+    margin-right: 40px;
+}
+
+#faq-container .faq-box .title {
+    color: #000;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+#faq-container .faq-box .details {
+    color: #5B5B5B;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 48px;
+}
+
+#faq-container h5{
+    margin-bottom: 30px;
+    border: 1px solid #EAEAEA;
+}
+/* FAQ SECTION END */
