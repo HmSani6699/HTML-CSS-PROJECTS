@@ -86,7 +86,7 @@ main,
 }
 
 #banner-container .bannder-container-left {
-    padding: 20px;
+    padding: 2.5rem;
 }
 
 #banner-container h1 {
@@ -133,7 +133,7 @@ main,
 }
 
 #banner-container #banner-container-right{
-    margin: 20px;
+    margin: 2.5rem;
 }
 
 
@@ -745,6 +745,38 @@ main,
 
 /* MEDIA QUERY  */
 @media (max-width: 576px) {
+    #banner-container {
+        display: block;
+        padding-bottom: 80px;
+        height: 100%;
+    }
+
+    #banner-container h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    #banner-container-right{
+        margin:30px 20px;
+    }
+}
+@media (max-width: 768px) {
+    #banner-container {
+        display: block;
+        padding-bottom: 80px;
+        height: 100%;
+    }
+
+    #banner-container h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    #banner-container-right{
+        margin:30px 20px;
+    }
+}
+@media (max-width: 992px) {
     #banner-container {
         display: block;
         padding-bottom: 80px;
