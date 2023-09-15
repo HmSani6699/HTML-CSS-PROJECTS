@@ -138,8 +138,6 @@ main,
 
 
 #banner-container img {
-    width: 550px;
-    height: 400px;
     margin-right: 25px;
     margin-bottom: 15px;
     border-radius: 0px 24px 24px 24px;
@@ -179,14 +177,16 @@ main,
 }
 
 #logo-container p {
-    margin-bottom: 48px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
 #logo-container article {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    gap: 3rem;
+    padding: 2.5rem;
 }
 
 /* LOGO SECTION END */
@@ -745,6 +745,7 @@ main,
 
 /* MEDIA QUERY  */
 @media (max-width: 576px) {
+    /* Banner section */
     #banner-container {
         display: block;
         padding-bottom: 80px;
@@ -758,9 +759,20 @@ main,
 
     #banner-container-right{
         margin:30px 20px;
+    }
+
+    #banner-container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Logo Section  */
+    #logo-container article {
+        grid-template-columns: repeat(2,1fr);
     }
 }
 @media (max-width: 768px) {
+    /* Bannet section */
     #banner-container {
         display: block;
         padding-bottom: 80px;
@@ -774,9 +786,21 @@ main,
 
     #banner-container-right{
         margin:30px 20px;
+    }
+
+    #banner-container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Logo section */
+
+    #logo-container article {
+        grid-template-columns: repeat(3,1fr);
     }
 }
 @media (max-width: 992px) {
+    /* Banner section */
     #banner-container {
         display: block;
         padding-bottom: 80px;
@@ -790,5 +814,16 @@ main,
 
     #banner-container-right{
         margin:30px 20px;
+    }
+
+    #banner-container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* logo section */
+
+    #logo-container article {
+        grid-template-columns: repeat(3,1fr);
     }
 }
