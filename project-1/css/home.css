@@ -11,7 +11,7 @@ body {
 /* MAIN SECTION START*/
 main,
 #navber {
-    max-width: 1250px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -82,6 +82,7 @@ main,
     align-items: center;
     background: rgb(0, 6, 36);
     background: linear-gradient(0deg, rgba(0, 6, 36, 1) 0%, rgba(232, 233, 255, 1) 0%, rgba(244, 244, 252, 1) 83%);
+    position: relative;
 }
 
 #banner-container .bannder-container-left {
@@ -90,7 +91,7 @@ main,
 
 #banner-container h1 {
     color: #0D1317;
-    font-size: 64px;
+    font-size: 4rem;
     line-height: 68px;
     letter-spacing: -1.92px;
     font-weight: 600;
@@ -131,6 +132,10 @@ main,
     color: black;
 }
 
+#banner-container #banner-container-right{
+    margin: 20px;
+}
+
 
 #banner-container img {
     width: 550px;
@@ -142,10 +147,6 @@ main,
     z-index: 100;
 }
 
-#banner-container-right {
-    position: relative;
-}
-
 #banner-container #box1 {
     width: 243px;
     height: 269px;
@@ -153,7 +154,7 @@ main,
     border-bottom-right-radius: 50px;
     position: absolute;
     right: 0px;
-    bottom: 0;
+    bottom: 90px;
     margin-bottom: -25px;
 }
 
@@ -163,8 +164,8 @@ main,
     background: #d15d23;
     border-top-left-radius: 10px;
     position: absolute;
-    left: 240px;
-    bottom: 0;
+    right:260px;
+    bottom: 90px;
     z-index: 101;
     margin-bottom: -25px;
 }
@@ -731,7 +732,7 @@ main,
     transition: all 0.4s;
 }
 
-#footer-main-content .footer  {
+#footer-main-content .footer {
     padding: 20px 0;
     text-align: center;
     color: #fff;
@@ -740,3 +741,22 @@ main,
 }
 
 /* FOOTER SUBCRIBE SECRITON END */
+
+
+/* MEDIA QUERY  */
+@media (max-width: 576px) {
+    #banner-container {
+        display: block;
+        padding-bottom: 80px;
+        height: 100%;
+    }
+
+    #banner-container h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    #banner-container-right{
+        margin:30px 20px;
+    }
+}
