@@ -443,7 +443,8 @@ main,
 }
 
 #review-container article {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -504,8 +505,9 @@ main,
 
 /* FAQ SECTION START */
 #faq-container {
-    max-width: 800px;
+    max-width: 840px;
     margin: 0px auto 128px auto;
+    padding:40px ;
 }
 
 #faq-container h2 {
@@ -599,7 +601,7 @@ main,
 
 #finsweet-container #medile-box button {
     padding: 16px 50px;
-    border-radius: 5px;
+    border-radius: 10px;
     background: #F24C27;
     color: #FFF;
     font-size: 24px;
@@ -844,6 +846,119 @@ main,
         width: 100%;
     }
 
+    /* Analytics section */
+    #analytics-container {
+        margin: 220px auto 0px auto;
+        display: block;
+        padding: 2.5rem;
+    }
+
+    #customers-container {
+        flex-direction: column-reverse;
+        padding: 2.5rem;
+        margin: 0px auto 0px auto;
+    }
+
+
+    #alerts-container {
+        display: block;
+        padding: 2.5rem;
+        margin: 0px auto 0px auto;
+    }
+
+    #analytics-container #analytics-container-left,
+    #analytics-container #analytics-container-right,
+    #customers-container #customers-container-left,
+    #customers-container #customers-container-right,
+    #alerts-container #alerts-container-left,
+    #alerts-container #alerts-container-right {
+        width: 100%;
+    }
+
+    #analytics-container #analytics-container-left img,
+    #customers-container #customers-container-right img,
+    #alerts-container #alerts-container-left .alert-img-box {
+        padding: 100px 40px;
+    }
+
+    #customers-container-right {
+        margin-left: 0;
+    }
+
+    #analytics-container #analytics-container-right,
+    #customers-container #customers-container-left,
+    #alerts-container #alerts-container-right {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    #analytics-container #analytics-container-right h2,
+    #customers-container #customers-container-left h2,
+    #alerts-container #alerts-container-right h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    /* Reviwe section  */
+
+    #review-container h2 {
+        padding: 2.5rem 2.5rem 0 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    #review-container article {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2.5rem;
+    }
+
+    #review-container .box-1 {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 15px;
+    }
+
+    #review-container .box-3 {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+    }
+
+    /* Footer section */
+    #finsweet-container #medile-box{
+        display: block;
+        padding: 40px;
+        text-align: center;
+    }
+    #finsweet-container #medile-box h2{
+        font-size: 1.5rem;
+        line-height: 106.5%;
+        margin-bottom: 30px;
+    }
+
+    #footer-main-content article{
+        display: block;
+        padding:0 40px;
+    }
+
+    #sibcribe-container{
+        display: block;
+        padding:0 40px;
+    }
+
+    #sibcribe-container div{
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #sibcribe-container div input{
+        width: 100%;
+    }
+
+    #sibcribe-container div button{
+        width: 100%;
+    }
+
 }
 
 @media (min-width:577px) and (max-width: 768px) {
@@ -867,7 +982,7 @@ main,
     /* Logo section */
 
     #logo-container article {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* Features Section  */
@@ -937,6 +1052,118 @@ main,
     #happy-container .happy-box p {
         width: 100%;
     }
+
+    /* Analytics section */
+    #analytics-container {
+        margin: 220px auto 0px auto;
+        display: block;
+        padding: 2.5rem;
+    }
+
+    #customers-container {
+        flex-direction: column-reverse;
+        padding: 2.5rem;
+        margin: 0px auto 0px auto;
+    }
+
+
+    #alerts-container {
+        display: block;
+        padding: 2.5rem;
+        margin: 0px auto 0px auto;
+    }
+
+    #analytics-container #analytics-container-left,
+    #analytics-container #analytics-container-right,
+    #customers-container #customers-container-left,
+    #customers-container #customers-container-right,
+    #alerts-container #alerts-container-left,
+    #alerts-container #alerts-container-right {
+        width: 100%;
+    }
+
+    #analytics-container #analytics-container-left img,
+    #customers-container #customers-container-right img,
+    #alerts-container #alerts-container-left .alert-img-box {
+        padding: 100px 40px;
+    }
+
+    #customers-container-right {
+        margin-left: 0;
+    }
+
+    #analytics-container #analytics-container-right,
+    #customers-container #customers-container-left,
+    #alerts-container #alerts-container-right {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    #analytics-container #analytics-container-right h2,
+    #customers-container #customers-container-left h2,
+    #alerts-container #alerts-container-right h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    /* Reviwe section  */
+    #review-container h2 {
+        padding: 2.5rem 2.5rem 0 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    #review-container article {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2.5rem;
+    }
+
+    #review-container .box-1 {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 15px;
+    }
+
+    #review-container .box-3 {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+    }
+
+  /* Footer section */
+  #finsweet-container #medile-box{
+    display: block;
+    padding: 40px;
+    text-align: center;
+}
+#finsweet-container #medile-box h2{
+    font-size: 1.5rem;
+    line-height: 106.5%;
+    margin-bottom: 30px;
+}
+
+#footer-main-content article{
+    display: block;
+    padding:0 40px;
+}
+
+#sibcribe-container{
+    display: block;
+    padding:0 40px;
+}
+
+#sibcribe-container div{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#sibcribe-container div input{
+    width: 100%;
+}
+
+#sibcribe-container div button{
+    width: 100%;
+}
 }
 
 @media (min-width:769px) and (max-width: 992px) {
@@ -1009,7 +1236,7 @@ main,
         display: none;
     }
 
-      /* Happy section */
+    /* Happy section */
     #happy-container img {
         height: 22rem;
     }
@@ -1029,6 +1256,59 @@ main,
     #happy-container .happy-box p {
         width: 100%;
     }
+
+    /* Analytics section */
+    #analytics-container,
+    #customers-container,
+    #alerts-container {
+        padding: 2.5rem;
+    }
+
+    #analytics-container {
+        margin: 220px auto 0px auto;
+    }
+
+    #customers-container {
+        margin: 0px auto 0px auto;
+    }
+
+
+    #alerts-container {
+        margin: 0px auto 0px auto;
+    }
+
+    #analytics-container #analytics-container-left img,
+    #customers-container #customers-container-right img,
+    #alerts-container #alerts-container-left .alert-img-box {
+        padding: 100px 40px;
+    }
+
+    #customers-container-left {
+        padding-right: 30px;
+    }
+
+    /* Reviwe section  */
+    #review-container h2 {
+        padding: 2.5rem 2.5rem 0 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    #review-container article {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2.5rem;
+    }
+
+    #review-container .box-1 {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 15px;
+    }
+
+    #review-container .box-3 {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+    }
 }
 
 
@@ -1037,5 +1317,27 @@ main,
 
     #logo-container article {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Featurecs section */
+
+    /* #features-container {
+        padding: 6.5rem;
+    } */
+
+    #features-container #features-container-left{
+        width: 50%;
+    }
+    #features-container #features-container-right {
+     width: 50%;
+    } 
+
+    /* Analytics section */
+    #analytics-container,
+    #customers-container,
+    #alerts-container,
+    #review-container h2,
+    #review-container article {
+        padding: 2.5rem;
     }
 }
