@@ -1,0 +1,112 @@
+/* product banner start */
+#product-banner-container-left {
+    width: 50%;
+    padding-left: 20px;
+}
+
+#product-banner-container-right {
+    width: 50%;
+    position: relative;
+    border-radius: 0;
+}
+
+#product-banner-container-right #banner-image {
+    height: 507px;
+    width: 440px;
+    border-bottom-right-radius: 110px;
+    margin-left: 25%;
+}
+
+#product-banner-container-right #box1 {
+    width: 32px;
+    height: 32px;
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    top: 0;
+}
+
+#product-banner-container-right #box2 {
+    width: 35px;
+    height: 35px;
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    bottom: 250px;
+    left: 65px;
+}
+
+#product-banner-container-right #box3 {
+    position: absolute;
+    width: 155px;
+    height: 167px;
+    border-radius: 0;
+    bottom: 0px;
+    left: 0px;
+}
+#product-banner-container-right #box3 img{
+    width: 100%;
+    border-top-left-radius: 40px;
+}
+
+/* product banner end */
+
+
+@media screen and (max-width:768px){
+    #product-banner-container-left,
+    #product-banner-container-right {
+        width: 100%;
+    }
+
+    #product-banner-container-right #banner-image {
+        width: 100%;
+        margin-left: 0;
+        padding: 2.5rem;
+    }
+
+    #product-banner-container-right #box3 {
+        left: initial;
+        right: 0px;
+    }
+    #product-banner-container-right #box1{
+        background-color: #f24c27;
+    }
+
+    #product-banner-container-right #box2 {
+        bottom: 0px;
+        left: 0px;
+        background-color: #232ed1;
+    }
+}
+
+
+@media screen and (min-width:769px) and (max-width:992px){
+    #product-banner-container-left,
+    #product-banner-container-right {
+        width: 100%;
+    }
+
+    #product-banner-container-right #banner-image {
+        width: 100%;
+        margin-left: 0;
+        padding: 2.5rem;
+    }
+
+    #product-banner-container-right #box3 {
+        left: initial;
+        right: 0px;
+    }
+    #product-banner-container-right #box1{
+        background-color: #f24c27;
+    }
+
+    #product-banner-container-right #box2 {
+        bottom: 0px;
+        left: 0px;
+        background-color: #232ed1;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px){
+    #product-banner-container-right #banner-image{
+        margin-left: 10%;
+    }
+}
