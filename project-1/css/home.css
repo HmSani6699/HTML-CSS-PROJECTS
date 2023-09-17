@@ -114,6 +114,7 @@ main,
     font-size: 18px;
     border: none;
     transition: all 0.4s;
+    cursor: pointer;
 }
 
 #banner-container button:hover {
@@ -418,6 +419,7 @@ main,
     line-height: 171%;
     border: none;
     background: #ffff;
+    cursor: pointer;
 }
 
 #analytics-container #analytics-container-right button .fa-solid,
@@ -507,7 +509,7 @@ main,
 #faq-container {
     max-width: 840px;
     margin: 0px auto 128px auto;
-    padding:40px ;
+    padding: 40px;
 }
 
 #faq-container h2 {
@@ -647,9 +649,21 @@ main,
     margin: 0px auto 60px auto;
 }
 
+
+#footer-main-content article #link-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 #footer-main-content article #logo {
     width: 23%;
 }
+
+#footer-main-content article #link-container {
+    width: 60%;
+}
+
+
 
 #footer-main-content article #logo img {
     width: 108px;
@@ -775,7 +789,9 @@ main,
 
     /* Logo Section  */
     #logo-container article {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     /* Features Section  */
@@ -882,7 +898,7 @@ main,
     }
 
     #customers-container-right {
-        margin-left: 0;
+        margin-left: 0px;
     }
 
     #analytics-container #analytics-container-right,
@@ -924,38 +940,50 @@ main,
     }
 
     /* Footer section */
-    #finsweet-container #medile-box{
+    #finsweet-container #medile-box {
         display: block;
         padding: 40px;
         text-align: center;
     }
-    #finsweet-container #medile-box h2{
+
+    #finsweet-container #medile-box h2 {
         font-size: 1.5rem;
         line-height: 106.5%;
         margin-bottom: 30px;
     }
 
-    #footer-main-content article{
+    #footer-main-content article {
         display: block;
-        padding:0 40px;
+        padding: 0 40px;
     }
 
-    #sibcribe-container{
-        display: block;
-        padding:0 40px;
+    #footer-main-content article #logo{
+        width: 100%;
     }
 
-    #sibcribe-container div{
+    #footer-main-content article #link-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+    }
+    
+
+    #sibcribe-container {
+        display: block;
+        padding: 0 40px;
+    }
+
+    #sibcribe-container div {
         display: block;
         width: 100%;
         margin-top: 20px;
     }
 
-    #sibcribe-container div input{
+    #sibcribe-container div input {
         width: 100%;
     }
 
-    #sibcribe-container div button{
+    #sibcribe-container div button {
         width: 100%;
     }
 
@@ -1129,41 +1157,50 @@ main,
         border-bottom-left-radius: 15px;
     }
 
-  /* Footer section */
-  #finsweet-container #medile-box{
-    display: block;
-    padding: 40px;
-    text-align: center;
-}
-#finsweet-container #medile-box h2{
-    font-size: 1.5rem;
-    line-height: 106.5%;
-    margin-bottom: 30px;
-}
+    /* Footer section */
+    #finsweet-container #medile-box {
+        display: block;
+        padding: 40px;
+        text-align: center;
+    }
 
-#footer-main-content article{
-    display: block;
-    padding:0 40px;
-}
+    #finsweet-container #medile-box h2 {
+        font-size: 1.5rem;
+        line-height: 106.5%;
+        margin-bottom: 30px;
+    }
 
-#sibcribe-container{
-    display: block;
-    padding:0 40px;
-}
+    #footer-main-content article {
+        display: block;
+        padding: 0 40px;
+    }
 
-#sibcribe-container div{
-    display: block;
-    width: 100%;
-    margin-top: 20px;
-}
+    #footer-main-content article #logo{
+        width: 100%;
+    }
 
-#sibcribe-container div input{
-    width: 100%;
-}
+    #footer-main-content article #link-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+    }
 
-#sibcribe-container div button{
-    width: 100%;
-}
+    #sibcribe-container {
+        display: block;
+        padding: 0 40px;
+    }
+
+    #sibcribe-container div {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #sibcribe-container div input,
+    #sibcribe-container div button,
+    #footer-main-content article #link-container {
+        width: 100%;
+    }
 }
 
 @media (min-width:769px) and (max-width: 992px) {
@@ -1309,6 +1346,45 @@ main,
         border-top-right-radius: 0px;
         border-bottom-left-radius: 15px;
     }
+
+    /* Footer section */
+    #finsweet-container #medile-box {
+        display: block;
+        padding: 40px;
+        text-align: center;
+    }
+
+    #finsweet-container #medile-box h2 {
+        font-size: 1.5rem;
+        line-height: 106.5%;
+        margin-bottom: 30px;
+    }
+
+    #footer-main-content article {
+        display: block;
+        padding: 0 40px;
+    }
+
+    #footer-main-content article #link-container {
+        margin-top: 40px;
+    }
+
+    #sibcribe-container {
+        display: block;
+        padding: 0 40px;
+    }
+
+    #sibcribe-container div {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #sibcribe-container div button,
+    #sibcribe-container div input,
+    #footer-main-content article #link-container {
+        width: 100%;
+    }
 }
 
 
@@ -1325,12 +1401,13 @@ main,
         padding: 6.5rem;
     } */
 
-    #features-container #features-container-left{
+    #features-container #features-container-left {
         width: 50%;
     }
+
     #features-container #features-container-right {
-     width: 50%;
-    } 
+        width: 50%;
+    }
 
     /* Analytics section */
     #analytics-container,
