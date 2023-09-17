@@ -371,7 +371,7 @@ main,
 #analytics-container #analytics-container-left img,
 #customers-container #customers-container-right img,
 #alerts-container #alerts-container-left .alert-img-box {
-    padding: 100px;
+    padding: 60px;
     width: 100%;
 }
 
