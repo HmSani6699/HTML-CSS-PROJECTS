@@ -345,7 +345,7 @@ main,
 #alerts-container {
     display: flex;
     align-items: center;
-    max-width: 1100px;
+    max-width: 1200px;
 }
 
 #analytics-container #analytics-container-left,
@@ -449,7 +449,7 @@ main,
 /* REVIEW SECTION START */
 
 #review-container {
-    max-width: 1100px;
+    max-width: 1200px;
 }
 
 #review-container article {
