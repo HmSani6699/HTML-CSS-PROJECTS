@@ -1,0 +1,135 @@
+#pricing-banner-container {
+    height: 650px;
+    background: rgb(0, 6, 36);
+    background: linear-gradient(0deg, rgba(0, 6, 36, 1) 0%, rgba(232, 233, 255, 1) 0%, rgba(244, 244, 252, 1) 83%);
+    position: relative;
+    border: 2px solid;
+    margin-bottom: 420px;
+    padding: 2.5rem;
+}
+
+#pricing-banner-container .title {
+    color: #0D1317;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: -1.92px;
+}
+
+#pricing-banner-container .sub-title {
+    color: #5B5B5B;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 140px;
+}
+
+#all-pricing-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+
+#pricing-banner-container .pricing-box {
+    padding: 50px;
+}
+
+#pricing-banner-container .pricing-box h3 {
+    color: #000;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 106.5%;
+    letter-spacing: -1.08px;
+}
+
+#pricing-banner-container .pricing-box h4 {
+    color: #0D1317;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 106.5%;
+    letter-spacing: -1.08px;
+    margin-top: 32px;
+}
+
+#pricing-banner-container .pricing-box h4 .amound {
+    font-size: 90px;
+}
+
+#pricing-banner-container .pricing-box h4 .month {
+    color: #394149;
+}
+
+#pricing-banner-container .pricing-box .box-title {
+    color: #5B5B5B;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+#pricing-banner-container .pricing-box p {
+    color: #5B5B5B;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 16px;
+}
+
+#pricing-banner-container .pricing-box .fa-solid {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 900;
+}
+
+#pricing-banner-container #pricing-box-1 i {
+    color: #232ED1;
+}
+
+#pricing-banner-container .pricing-box button {
+    border-radius: 7px;
+    padding: 18px 90px;
+    font-size: 20px;
+    margin-top: 150px;
+}
+
+
+#pricing-banner-container #pricing-box-1 {
+    background: linear-gradient(180deg, #FFF 52.08%, #ECEDFF 100%);
+}
+
+#pricing-banner-container #pricing-box-2 {
+    background: linear-gradient(180deg, #FFF 52.6%, #FFE8E2 100%);
+}
+
+#pricing-banner-container #pricing-box-3 {
+    background: linear-gradient(180deg, #FFF 52.08%, #ECEDFF 100%);
+}
+
+#pricing-banner-container #pricing-box-1 button,
+#pricing-banner-container #pricing-box-3 button {
+    border: 2px solid #232ED1;
+    transition: all 0.4s;
+    color: #232ED1;
+}
+
+#pricing-banner-container #pricing-box-1 button:hover,
+#pricing-banner-container #pricing-box-3 button:hover {
+    background-color: #232ED1;
+    color: white;
+}
+
+#pricing-banner-container #pricing-box-2 button {
+    background: #F24C27;
+    border: 2px solid #F24C27;
+    color: #FFF;
+    transition: all 0.4s;
+}
+#pricing-banner-container #pricing-box-2 button:hover {
+    background: #fa380d;
+    background: none;
+    color: #fa380d;
+}

@@ -146,12 +146,8 @@ main,
 }
 
 
-#banner-container img #home-banner-image{
+#banner-container #banner-container-right #home-banner-img{
     width: 100%;
-    height: 100%;
-    margin-right: 25px;
-    margin-bottom: 15px;
-    border-radius: 0px 24px 24px 24px;
     position: relative;
     z-index: 100;
 }
