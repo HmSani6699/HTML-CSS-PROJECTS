@@ -23,7 +23,8 @@
 }
 
 #about-container #about-container-left p,
-#about-finsweet-container p {
+#about-finsweet-container p,
+#team-container #team-container-left p {
     color: #5B5B5B;
     font-size: 18px;
     font-weight: 500;
@@ -122,10 +123,72 @@
     margin-top: 40px;
 }
 
+/* Team section start */
+#team-container {
+    padding: 2.5rem;
+    display: flex;
+    margin: 128px 0;
+}
+
+#team-container #team-container-left {
+    width: 30%;
+}
+
+#team-container #team-container-left h2 {
+    color: #0D1317;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -1.44px;
+    margin-bottom: 23px;
+}
+
+#team-container #team-container-right {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+#team-container #team-container-right .team-user-box img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#team-container #team-container-right .team-user-box h4 {
+    color: #232ED1;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 30px;
+}
+
+#team-container #team-container-right .team-user-box h2 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 33px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#team-container #team-container-right .team-user-box .media-icon-link {
+    display: flex;
+    gap: 15px;
+}
+
+#team-container #team-container-right .team-user-box .media-icon-link i {
+    font-size: 25px;
+    color: #5B5B5B;
+    cursor: pointer;
+}
+
 @media screen and (max-width:768px) {
     #about-container {
         display: block;
         height: 430px;
+        padding: 1.5rem;
     }
 
     #about-container #about-container-left,
@@ -148,6 +211,10 @@
     }
 
     /* Finsweet section */
+    #about-finsweet-container {
+        padding: 1.5rem;
+    }
+
     #about-finsweet-container .finsweet-box-1 {
         right: 30px;
         bottom: 30px;
@@ -163,5 +230,24 @@
     #about-finsweet-container .sub-discription {
         width: 100%;
         text-align: center;
+    }
+
+    /* Team Container */
+    #team-container {
+        display: block;
+        padding: 1.5rem;
+    }
+
+    #team-container #team-container-left {
+        width: 100%;
+    }
+
+    #team-container #team-container-right {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    #team-container #team-container-right {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
