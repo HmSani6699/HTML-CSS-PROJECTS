@@ -57,7 +57,11 @@ main,
     cursor: pointer;
 }
 
-#navber ul li:hover {
+#navber ul li a{
+    text-decoration: none;
+}
+
+#navber ul li a:hover {
     color: #232ED1;
 }
 

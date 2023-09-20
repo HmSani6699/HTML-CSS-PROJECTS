@@ -3,7 +3,6 @@
     background: rgb(0, 6, 36);
     background: linear-gradient(0deg, rgba(0, 6, 36, 1) 0%, rgba(232, 233, 255, 1) 0%, rgba(244, 244, 252, 1) 83%);
     position: relative;
-    border: 2px solid;
     margin-bottom: 420px;
     padding: 2.5rem;
 }
@@ -91,7 +90,8 @@
 
 #pricing-banner-container .pricing-box button {
     border-radius: 7px;
-    padding: 18px 90px;
+    padding: 18px ;
+    width: 100%;
     font-size: 20px;
     margin-top: 150px;
 }
@@ -132,4 +132,26 @@
     background: #fa380d;
     background: none;
     color: #fa380d;
+}
+
+
+@media screen and (max-width:768px) {
+    #pricing-banner-container {
+        height: 100%;
+        margin-bottom: 128px;
+    }
+
+    #all-pricing-box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px){
+    #pricing-banner-container {
+        height: 100%;
+        margin-bottom: 128px;
+    }
+
+    #all-pricing-box{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
