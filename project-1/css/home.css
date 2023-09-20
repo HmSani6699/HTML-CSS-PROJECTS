@@ -59,6 +59,7 @@ main,
 
 #navber ul li a{
     text-decoration: none;
+    color: #000000;
 }
 
 #navber ul li a:hover {

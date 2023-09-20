@@ -1,0 +1,167 @@
+#about-container {
+    height: 350px;
+    background: rgb(0, 6, 36);
+    background: linear-gradient(0deg, rgba(0, 6, 36, 1) 0%, rgba(232, 233, 255, 1) 0%, rgba(244, 244, 252, 1) 83%);
+    position: relative;
+    margin-bottom: 128px;
+    padding: 2.5rem;
+    display: flex;
+}
+
+#about-container #about-container-left {
+    width: 50%;
+}
+
+#about-container #about-container-left h2 {
+    color: #0D1317;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: -1.92px;
+    margin-bottom: 24px;
+    margin-top: 20px;
+}
+
+#about-container #about-container-left p,
+#about-finsweet-container p {
+    color: #5B5B5B;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+#about-container #about-container-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+    padding-top: 100px;
+}
+
+.right-box-container-1,
+.right-box-container-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-box-container-1 {
+    margin-bottom: 20px;
+}
+
+#about-container #about-container-right .right-box-1 {
+    height: 80px;
+    width: 75px;
+    background: #F24C27;
+    border-top-left-radius: 15px;
+}
+
+#about-container #about-container-right .right-box-2 {
+    height: 130px;
+    width: 120px;
+    background: #232ED1;
+    border-bottom-right-radius: 15px;
+}
+
+
+/* About Finsweet section start */
+#about-finsweet-container {
+    padding: 2.5rem;
+}
+
+#about-finsweet-container h2 {
+    color: #0D1317;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -1.44px;
+    margin-bottom: 24px;
+}
+
+#about-finsweet-container .finsweet-user-box {
+    position: relative;
+    margin-bottom: 60px
+}
+
+#about-finsweet-container .finsweet-user-box img {
+    width: 100%;
+    margin-top: 70px;
+    border-top-right-radius: 50px;
+}
+
+#about-finsweet-container .finsweet-box-1 {
+    width: 77px;
+    height: 85px;
+    background: #232ED1;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+}
+
+#about-finsweet-container .finsweet-box-2 {
+    width: 49px;
+    height: 53px;
+    background: #F24C27;
+    border-top-left-radius: 15px;
+    position: absolute;
+    right: 60px;
+    bottom: -60px;
+}
+
+#about-finsweet-container .discription {
+    width: 70%;
+}
+
+#about-finsweet-container .sub-discription {
+    width: 70%;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:768px) {
+    #about-container {
+        display: block;
+        height: 430px;
+    }
+
+    #about-container #about-container-left,
+    #about-container #about-container-right {
+        width: 100%;
+    }
+
+    #about-container #about-container-right {
+        padding-top: 20px;
+    }
+
+    #about-container #about-container-right .right-box-1 {
+        height: 40px;
+        width: 30px;
+    }
+
+    #about-container #about-container-right .right-box-2 {
+        height: 80px;
+        width: 70px;
+    }
+
+    /* Finsweet section */
+    #about-finsweet-container .finsweet-box-1 {
+        right: 30px;
+        bottom: 30px;
+        height: 60px;
+        width: 50px;
+    }
+
+    #about-finsweet-container .discription {
+        margin-top: 75px;
+    }
+
+    #about-finsweet-container .discription,
+    #about-finsweet-container .sub-discription {
+        width: 100%;
+        text-align: center;
+    }
+}
