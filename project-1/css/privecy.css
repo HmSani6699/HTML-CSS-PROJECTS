@@ -1,0 +1,48 @@
+#privedy-container {
+    width: 60%;
+    padding: 2.5rem;
+    margin:128px auto 128px auto;
+    margin-bottom: 128px;
+    text-align: justify;
+}
+
+#privedy-container .title {
+    color: #0D1317;
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+#privedy-container p {
+    color: #5B5B5B;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+#privedy-container .sub-details-1 ,
+#privedy-container .sub-details-2{
+   margin-bottom: 40px;
+}
+
+#privedy-container .title-1 {
+    color: #0D1317;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width:768px) {
+    /* Product details */
+    #privedy-container{
+        width: 90%;
+        text-align: start;
+    }
+    #privedy-container p{
+        text-align: justify;
+    }
+
+    #privedy-container .title-1{
+        font-size: 38px;
+    }
+}

@@ -715,8 +715,13 @@ main,
     cursor: pointer;
     transition: all 0.4s;
 }
+#footer-main-content .link p a{
+    text-decoration: none;
+    color: #5B5B5B;
+    font-size: 18px;
+}
 
-#footer-main-content .link p:hover {
+#footer-main-content .link p a:hover {
     color: #0010FF;
 }
 

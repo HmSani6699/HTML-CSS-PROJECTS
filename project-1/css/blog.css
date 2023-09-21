@@ -126,6 +126,11 @@
     background: #fff;
 }
 
+#product-container .product-items-container .product-item button a{
+    text-decoration: none;
+    color: #1A1A1A;
+}
+
 #product-container .all-post-title {
     margin-top: 100px;
 }

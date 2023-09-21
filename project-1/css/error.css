@@ -1,0 +1,66 @@
+#error-container {
+    height: 100vh;
+    background: rgb(0, 6, 36);
+    background: linear-gradient(0deg, rgba(0, 6, 36, 1) 0%, rgba(232, 233, 255, 1) 0%, rgba(244, 244, 252, 1) 83%);
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#error-container h3 {
+    color: #232ED1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 25px  0 18px 0;
+}
+
+#error-container h2 {
+    color: #0D1317;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+#error-container .sef-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+#error-container #contact-container-left-box-1 {
+    height: 30px;
+    width: 30px;
+    background-color: #F24C27;
+    border-top-left-radius: 10px;
+}
+
+#error-container #contact-container-left-box-2 {
+    height: 50px;
+    width: 40px;
+    background-color: #232ED1;
+    border-bottom-right-radius: 10px;
+}
+
+#error-container button {
+    border-radius: 7px;
+    padding: 18px 50px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 50px;
+    background: #F24C27;
+    color: #fff;
+    border: none;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+#error-container button a {
+    text-decoration: none;
+    color: #fff;
+}
