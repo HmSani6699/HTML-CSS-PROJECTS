@@ -1,6 +1,6 @@
 /* Nabver start */
-#navber{
-    background-color: #ffff ;
+#navber {
+    background-color: #ffff;
 }
 
 #navber button {
@@ -9,4 +9,118 @@
 
 
 /* Contact sectoin start */
-#contact-container
+#contact-container {
+    padding: 0rem 7rem 0rem 7rem;
+    margin-bottom: 128px;
+    margin-top: 90px;
+    display: flex;
+}
+
+#contact-container #contact-container-left {
+    width: 40%;
+}
+
+#contact-container #contact-container-right {
+    width: 60%;
+}
+
+#contact-container #contact-container-left .sef-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+#contact-container #contact-container-left #contact-container-left-box-1 {
+    height: 30px;
+    width: 30px;
+    background-color: #F24C27;
+    border-top-left-radius: 15px;
+}
+
+#contact-container #contact-container-left #contact-container-left-box-2 {
+    height: 50px;
+    width: 40px;
+    background-color: #232ED1;
+    border-bottom-right-radius: 15px;
+}
+
+#contact-container #contact-container-left h2 {
+    color: #0D1317;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: -1.92px;
+    margin-bottom: 32px;
+}
+
+#contact-container #contact-container-left p {
+    color: #5B5B5B;
+    font-size: 24px;
+    line-height: 141%;
+    letter-spacing: -0.72px;
+}
+
+#contact-container #contact-container-right h3 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+#contact-container #contact-container-right input,
+#contact-container #contact-container-right textarea {
+    border-radius: 5px;
+    border: 2px solid rgba(159, 160, 184, 0.40);
+    padding: 20px 32px;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 24px;
+    outline: none;
+}
+
+#contact-container #contact-container-right input:focus,
+#contact-container #contact-container-right textarea:focus {
+    border: 2px solid rgba(35, 46, 209, 0.40);
+}
+
+#contact-container #contact-container-right #nameAndCompanyFiled {
+    display: flex;
+    gap: 24px;
+}
+
+#contact-container #contact-container-right #nameAndCompanyFiled input {
+    width: 50%;
+}
+
+#contact-container #contact-container-right textarea {
+    height: 190px;
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    #contact-container {
+        padding: 0rem 2rem 0rem 2rem;
+        display: block;
+    }
+
+    #contact-container #contact-container-left,
+    #contact-container #contact-container-right {
+        width: 100%;
+    }
+
+    #contact-container #contact-container-left h2 {
+        font-size: 35px;
+    }
+
+    #contact-container #contact-container-right #nameAndCompanyFiled {
+        display: block;
+    }
+
+    #contact-container #contact-container-right #nameAndCompanyFiled input {
+        width: 100%;
+    }
+}
