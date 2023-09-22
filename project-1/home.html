@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finsweet</title>
+    <title>Finsweet || Home</title>
+    <link rel="shortcut icon" href="images/users/iframe.jpg" type="image/x-icon">
     <!--Css Link-->
     <link rel="stylesheet" href="css/home.css">
     <!-- Google font -->
@@ -22,18 +23,23 @@
     <!-- HEADER SECTION START -->
     <header>
         <nav id="navber">
-            <div>
-                <ul>
-                    <li class="logo"><img src="images/logo.svg" alt=""></li>
+            <div class="menu-link">
+                <div>
+                     <img class="logo" src="images/logo.svg" alt="">
+                </div>
+                <ul id="list-item"> 
                     <li class="home"><a href="home.html">Home</a></li>
                     <li><a href="product.html">Product</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="blog.html">Blog</a></li>
+                    <li><button class="clone-btn-menu">Clone Project</button></li>
                 </ul>
             </div>
-            <button>Clone Project</button>
+            <button class="clone-btn">Clone Project</button>
+            <!-- <button class="hamberGar"><i class="fa-solid fa-bars"></i></button> -->
+            <i id="hamberger-btn" class="fa-solid fa-bars hamberGar"></i>
         </nav>
     </header>
     <!-- HEADER SECTION END -->
@@ -329,6 +335,9 @@
 
     </footer>
     <!-- FOOTER SECTION END -->
+
+    <!-- JS LINK FILE -->
+    <script src="js/navber.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
 
 
 
-.hide{
+.hide {
     display: none;
 }
 
@@ -35,15 +35,20 @@ main,
     padding: 20px;
 }
 
+#navber .menu-link {
+    display: flex;
+    align-items: center;
+}
+
 #navber ul {
     display: flex;
     align-items: center;
     list-style: none;
 }
 
-#navber ul li img {
-    width: 108px;
-    height: 21.873px;
+#navber .menu-link img {
+    width: 100px;
+    height: 25px;
     margin-right: 64px;
 }
 
@@ -57,7 +62,7 @@ main,
     cursor: pointer;
 }
 
-#navber ul li a{
+#navber ul li a {
     text-decoration: none;
     color: #000000;
 }
@@ -70,7 +75,7 @@ main,
     color: #232ED1;
 }
 
-#navber button {
+#navber .clone-btn {
     width: 185px;
     height: 60px;
     font-size: 18px;
@@ -79,6 +84,22 @@ main,
     border: 2px solid rgba(35, 46, 209, 0.40);
     transition: all 0.4s;
     background: #f3f4fc;
+}
+
+#navber .clone-btn-menu {
+    width: 185px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid rgba(35, 46, 209, 0.40);
+    transition: all 0.4s;
+    background: #f3f4fc;
+}
+
+#navber .hamberGar {
+    display: none;
+    font-size: 25px;
 }
 
 #navber button:hover {
@@ -151,10 +172,11 @@ main,
 }
 
 
-#banner-container #banner-container-right #home-banner-img{
+#banner-container #banner-container-right #home-banner-img {
     width: 100%;
     position: relative;
     z-index: 100;
+    border-radius: 0px 40px 40px 40px;
 }
 
 #banner-container #box1 {
@@ -715,7 +737,8 @@ main,
     cursor: pointer;
     transition: all 0.4s;
 }
-#footer-main-content .link p a{
+
+#footer-main-content .link p a {
     text-decoration: none;
     color: #5B5B5B;
     font-size: 18px;
@@ -784,6 +807,54 @@ main,
 
 /* MEDIA QUERY  */
 @media (max-width: 576px) {
+    /* Navber section */
+    #navber {
+        align-items: normal;
+        padding: 20px 2rem;
+        position: relative;
+    }
+
+    #navber .menu-link {
+        display: block;
+        align-items: normal;
+    }
+
+    #navber .menu-link img {
+        margin-bottom: 30px;
+    }
+
+    #navber ul {
+        width: 100%;
+        display: block;
+        align-items: normal;
+        position: absolute;
+        z-index: 200;
+        transition: all 0.5s;
+        position: absolute;
+        left: 0;
+        top: -600px;
+        padding-left: 2rem;
+        background: rgb(0, 6, 36);
+        background: linear-gradient(0deg, rgba(0, 6, 36, 1) 0%, rgba(232, 233, 255, 1) 0%, rgba(244, 244, 252, 1) 83%);
+    }
+
+    #navber ul li {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    #navber .clone-btn {
+        display: none;
+    }
+
+    #navber .clone-btn-menu {
+        display: block;
+    }
+
+    #navber .hamberGar {
+        display: block;
+    }
+
 
     /* Banner section */
     #banner-container {
@@ -971,7 +1042,7 @@ main,
         padding: 0 40px;
     }
 
-    #footer-main-content article #logo{
+    #footer-main-content article #logo {
         width: 100%;
     }
 
@@ -980,7 +1051,7 @@ main,
         grid-template-columns: repeat(1, 1fr);
         margin-top: 40px;
     }
-    
+
 
     #sibcribe-container {
         display: block;
@@ -1004,6 +1075,54 @@ main,
 }
 
 @media (min-width:577px) and (max-width: 768px) {
+
+    /* Navber section */
+    #navber {
+        align-items: normal;
+        padding: 20px 2rem;
+        position: relative;
+    }
+
+    #navber .menu-link {
+        display: block;
+        align-items: normal;
+    }
+
+    #navber .menu-link img {
+        margin-bottom: 30px;
+    }
+
+    #navber ul {
+        width: 100%;
+        display: block;
+        align-items: normal;
+        position: absolute;
+        z-index: 200;
+        transition: all 0.6s;
+        position: absolute;
+        left: 0;
+        top: -600px;
+        padding-left: 2rem;
+        background: rgb(0, 6, 36);
+        background: linear-gradient(0deg, rgba(0, 6, 36, 1) 0%, rgba(232, 233, 255, 1) 0%, rgba(244, 244, 252, 1) 83%);
+    }
+
+    #navber ul li {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    #navber .clone-btn {
+        display: none;
+    }
+
+    #navber .clone-btn-menu {
+        display: block;
+    }
+
+    #navber .hamberGar {
+        display: block;
+    }
 
     /* Bannet section */
     #banner-container {
@@ -1189,7 +1308,7 @@ main,
         padding: 0 40px;
     }
 
-    #footer-main-content article #logo{
+    #footer-main-content article #logo {
         width: 100%;
     }
 
